@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sebas Cubos V1</title>
   <style>
     body {
@@ -49,36 +49,26 @@
       color: #cccccc;
     }
 
-    .sugerencia-btn {
+    .button-container {
       margin-top: 30px;
+    }
+
+    .sugerencia-btn {
       background-color: #00ffff;
       color: black;
-      padding: 15px 25px;
+      padding: 12px 20px;
+      font-size: 1em;
       border: none;
       border-radius: 10px;
-      font-size: 1.2em;
       cursor: pointer;
-      position: relative;
-      overflow: hidden;
-      transition: transform 0.3s ease;
+      margin: 10px;
+      box-shadow: 0 0 10px #00ffff;
+      transition: transform 0.2s ease;
     }
 
     .sugerencia-btn:hover {
+      background-color: #00cccc;
       transform: scale(1.05);
-    }
-
-    .sugerencia-btn::before {
-      content: '🧊';
-      position: absolute;
-      left: -30px;
-      top: 50%;
-      transform: translateY(-50%);
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      0% { transform: translateY(-50%) rotate(0deg); }
-      100% { transform: translateY(-50%) rotate(360deg); }
     }
   </style>
 </head>
@@ -92,12 +82,20 @@
       También compartiré significados que te inspiren a ser alguien capaz de lograr lo que te propongas.</p>
     </div>
 
-    <p class="note">La página está en desarrollo, pero con el tiempo tendrá actualizaciones.</p>
+    <!-- Botones de navegación -->
+    <div class="button-container">
+      <button class="sugerencia-btn" onclick="location.href='sugerencias.html'">
+        Sugerencias ✉️
+      </button>
+      <button class="sugerencia-btn" onclick="location.href='diseños.html'">
+        Diseños de cubos 🧩
+      </button>
+    </div>
 
-    <button class="sugerencia-btn" onclick="location.href='sugerencias.html'"> <!-- Cambio menor para desplegar -->
-      Sugerencias ✉️
-    </button>
+    <p class="note">La página está en desarrollo, pero con el tiempo tendrá actualizaciones.</p>
   </div>
+</body>
+</html>
 </body>
 </html>
 
