@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sebas Cubos V1</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1562975327-29a8cbfd5be6?q=80&w=1744&auto=format&fit=crop');
+      background-size: cover;
+      background-attachment: fixed;
+      color: white;
+      text-align: center;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px #00ffff;
+    }
+
+    .info-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid #00ffff;
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto 30px auto;
+      box-shadow: 0 0 10px #00ffff;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+
+    .note {
+      font-style: italic;
+      margin-top: 40px;
+      color: #cccccc;
+    }
+
+    .sugerencia-btn {
+      margin-top: 30px;
+      background-color: #00ffff;
+      color: black;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2em;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .sugerencia-btn:hover {
+      transform: scale(1.05);
+    }
+
+    .sugerencia-btn::before {
+      content: '🧊';
+      position: absolute;
+      left: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: translateY(-50%) rotate(0deg); }
+      100% { transform: translateY(-50%) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Sebas Cubos V1</h1>
+
+    <div class="info-box">
+      <p><strong>Mi objetivo es impulsar y motivar a los demás a usar cubos Rubik.</strong><br><br>
+      Haré tutoriales y algoritmos que te ayudarán a armar el cubo que quieras. Además, te explicaré paso a paso la forma de resolverlo, con el fin de fomentar el uso de los cubos.<br><br>
+      También compartiré significados que te inspiren a ser alguien capaz de lograr lo que te propongas.</p>
+    </div>
+
+    <p class="note">La página está en desarrollo, pero con el tiempo tendrá actualizaciones.</p>
+
+    <button class="sugerencia-btn" onclick="location.href='sugerencias.html'">
+      Sugerencias ✉️
+    </button>
+  </div>
+</body>
+</html>
+
